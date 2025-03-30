@@ -3,7 +3,7 @@ import Navigation from "./Navigation";
 
 export default function Header() {
   return (
-    <header className="flex items-center justify-between p-2">
+    <header className="flex items-center justify-between">
       <div className="flex items-center space-x-3">
         <Image
           src="/xReservation.png"

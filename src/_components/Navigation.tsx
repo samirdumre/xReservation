@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navigation() {
   return (
     <div className="flex-auto">
-      <ul className="flex items-center space-x-20 pr-7">
+      <ul className="flex items-center space-x-20">
         <li>
           <Link href="/">Home</Link>
         </li>
