@@ -1,4 +1,6 @@
-
+export const metadata = {
+  title: "Manage Account"
+}
 
 export default function Account() {
   return (

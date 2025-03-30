@@ -1,5 +1,7 @@
-import axios from "axios";
-import Counter from "@/_components/Counter";
+
+export const metadata = {
+  title: "Cabins"
+}
 
 export default function Cabins() {
 

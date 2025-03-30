@@ -5,7 +5,7 @@ export default function Logo() {
     <div>
       <span>
         <Image
-          src="/xReservation.jpg"
+          src="/xReservation.png"
           alt="xReservation Logo"
           width="50"
           height="50"

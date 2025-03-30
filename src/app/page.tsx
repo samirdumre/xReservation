@@ -1,7 +1,10 @@
+export const metadata = {
+  title: "Homepage",
+};
 export default function Homepage() {
-  return(
+  return (
     <>
-    <h1>This is Homepage</h1>
+      <h1>This is Homepage</h1>
     </>
-  )
+  );
 }

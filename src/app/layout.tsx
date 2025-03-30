@@ -2,24 +2,20 @@ import "@/_styles/globals.css";
 import type { Metadata } from "next";
 import Navigation from "../_components/Navigation";
 import Logo from "../_components/Logo";
-import { Inter, Geist, Geist_Mono } from "next/font/google";
+import { Josefin_Sans } from "next/font/google";
 
-const inter = Inter({
-  subsets: ["latin"]
-})
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const josefinSans = Josefin_Sans({
   subsets: ["latin"],
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+console.log(josefinSans);
 
 export const metadata: Metadata = {
-  title: "xReservation",
+  title: {
+    template: "%s - xReservation",
+    default: "Welcome / xReservation",
+  },
   description: "An advanced Reservation system build using Next.js",
 };
 
@@ -30,16 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-primary-950 text-primary-100 min-h-screen">
+      <body className={`${josefinSans.className} bg-primary-950 text-primary-100 min-h-screen`}>
         <header>
           <Logo />
           <Navigation />
         </header>
-        <main
-          className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-        >
-          {children}
-        </main>
+        <main>{children}</main>
         <footer className="text-blue-500">
           Copyright &copy; xReservation 2025
         </footer>
