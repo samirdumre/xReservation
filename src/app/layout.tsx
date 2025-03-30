@@ -1,7 +1,7 @@
-import "./globals.css";
+import "@/_styles/globals.css";
 import type { Metadata } from "next";
-import Navigation from "./components/Navigation";
-import Logo from "./components/Logo";
+import Navigation from "../_components/Navigation";
+import Logo from "../_components/Logo";
 import { Inter, Geist, Geist_Mono } from "next/font/google";
 
 const inter = Inter({
@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>
+      <body className="bg-primary-950 text-primary-100 min-h-screen">
         <header>
           <Logo />
           <Navigation />
